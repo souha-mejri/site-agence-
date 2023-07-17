@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Voyage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/96dcb489df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- section acceuil -->
+    <section id="container">
+        <header>
+            <div class="logo">
+                <p>Voyage</p>
+            </div>
+
+            <!-- menu responsive -->
+            <div class="menu-toggle"></div>
+
+            <ul class="menu">
+                <li><a href="#container">acceuil</a></li>
+                <li><a href="#a-propos">à propos</a></li>
+                <li><a href="#gallerie">destinations</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </header>
+        <div class="container-text">
+            <h1>Voyager , Une passion</h1>
+            <p>Rester c'est exister , mais voyager c'est vivre</p>
+            <a href="forumulaire2.html">Réserver un vol</a>
+        </div>
+    </section>
+
+    <!-- section a propos -->
+    <section id="a-propos">
+        <div>
+            <p class="tittle-section">à propos</p>
+            <h1 class="sub-tittle-section">Qui sommes nous </h1>
+            <div class="description-photo">
+                <div class="desc">
+                    <p> une entreprise commerciale qui compose et vend des offres de voyages à ses
+                        clients .</p>
+
+                    <H2>NOS SERVICES</H2>
+                    <div class="list-services">
+                        <div class="service">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <p>RAPIDE</p>
+                        </div>
+                        <div class="service">
+                            <i class="fas fa-money-check-alt"></i>
+                            <p>ECONOMIQUE</p>
+                        </div>
+                        <div class="service">
+                            <i class="fas fa-check"></i>
+                            <p>FIABLE</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/image-descr.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- section gallerie destination -->
+    <section id="gallerie">
+        <p class="tittle-section">DESTINATION</p>
+        <h1 class="sub-tittle-section">les pays de vos rêves </h1>
+        <div class="liste-photos">
+            <div class="gallerie-img">
+                <img src="images/chine.jpg" alt="">
+                <div class="show-country">
+                    <p>CHINE</p>
+                </div>
+            </div>
+            <div class="gallerie-img">
+                <img src="images/afrique.jpg" alt="">
+                <div class="show-country">
+                    <p>BENIN</p>
+                </div>
+            </div>
+            <div class="gallerie-img">
+                <img src="images/paris.jpg" alt="">
+                <div class="show-country">
+                    <p>PARIS</p>
+                </div>
+            </div>
+            <div class="gallerie-img">
+                <img src="images/italie.jpg" alt="">
+                <div class="show-country">
+                    <p>ITALIE</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--  section contact -->
+    <section id="contact">
+        <p class="tittle-section">contact</p>
+        <h1 class="sub-tittle-section">formulaire de contact</h1>
+        <div>
+            <form action="">
+                <label>Adresse Mail</label>
+                <input type="text" placeholder="Ex: azerty@gmail.com">
+                <label>Message</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Votre message..."></textarea>
+                <input type="submit" value="ENVOYER">
+            </form>
+            <div class="sociale">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="images-contact">
+                <img src="images/image-contact.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        var menu_toggle = document.querySelector('header .menu-toggle');
+        var menu = document.querySelector('header .menu');
+        menu_toggle.onclick = function () {
+            menu_toggle.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+    </script>
+
+</body>
+
+</html>
